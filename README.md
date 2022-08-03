@@ -12,4 +12,4 @@ built with React and JavaScript. styled with CSS.
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in your browser.
 
-https://img.shields.io/github/last-commit/Nhujarski/Clock-app
+<img src='https://img.shields.io/github/last-commit/Nhujarski/Clock-app' />
