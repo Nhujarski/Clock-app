@@ -4,26 +4,21 @@ import "./clock.css";
 const Clock = () => {
   const [time, setTime] = useState(new Date());
 
-  let hours = time.getHours();
-  let minutes = time.getMinutes();
-
   const getTime = () => {
     setTime(new Date());
-    console.log("time in intervl >>> ", time);
   };
-  setInterval(getTime, 60000);
 
   useEffect(() => {
-    hours = time.getHours();
-    minutes = time.getMinutes();
-  }, [time]);
+    const timerId = setInterval(getTime, 1000);
+    return function cleanup() {
+      clearInterval(timerId);
+    };
+  }, []);
 
   return (
     <div className='clock'>
       <div className='clock-face'>
-        <p className='clock-display'>
-          {hours} : {minutes}
-        </p>
+        <p className='clock-display'>{time.toLocaleTimeString()}</p>
       </div>
     </div>
   );
