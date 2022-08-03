@@ -1,5 +1,24 @@
 .clock {
-  width: 500px;
-  height: 300px;
-  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 150px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 15%);
+}
+
+.clock-face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 90%;
+}
+
+.clock-display {
+  color: white;
+  font-size: 100px;
+  font-family: "Orbitron", sans-serif;
 }
