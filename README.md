@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This is a basic clock app used to tell current time.
 built with React and JavaScript. styled with CSS.
 
+<img src='digitalClockScrrenshot.png' alt='a digital clock with a synthwave sunset in the background'/>
+
 # npm start
 
 Runs the app in the development mode.
